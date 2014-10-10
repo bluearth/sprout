@@ -17,6 +17,11 @@ public class App extends Application {
 	}
 
 	public static void main(String ... args) {
+ 
+ 		// Required to bridge any library using java.util.logging to SLF4J
+		SLF4JBridgeHandler.removeHandlersForRootLogger();  // (since SLF4J 1.6.5)
+		SLF4JBridgeHandler.install();		
+		
 		launch(args);
 	}
 
