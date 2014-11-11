@@ -1,5 +1,7 @@
 package id.my.barkahyusuf.sprout;
 
+import org.slf4j.bridge.SLF4JBridgeHandler;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
